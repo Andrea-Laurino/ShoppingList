@@ -1,6 +1,7 @@
 <div class="row" [ngClass]="{ completed: item.completed }">
   <div class="title">
     <input
+      class="custom-checkbox"
       type="checkbox"
       [checked]="item.completed"
       (change)="onToggle(item)"

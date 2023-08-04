@@ -1,9 +1,8 @@
 import express, { urlencoded, json } from "express";
+const app = express();
 import cors from "cors";
 import { v4 as uuidv4 } from "uuid";
 import { promises } from "fs";
-
-const app = express();
 const { readFile, writeFile } = promises;
 
 app.use(cors());
@@ -30,6 +29,7 @@ app.put("/items/:id", async (req, res) => {
   await save();
   res.json(items[index]);
 });
+
 app.delete("/items/:id", async (req, res) => {
   const id = req.params.id;
   await open();

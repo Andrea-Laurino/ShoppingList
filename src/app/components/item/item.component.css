@@ -19,6 +19,7 @@ div {
   width: 50%;
   padding: 0 5px;
 }
+
 .price {
   width: 15%;
   padding: 0 5px;
@@ -45,7 +46,7 @@ div {
 .actions button {
   border: none;
   font-size: 12px;
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.821);
   color: white;
   padding: 5px;
   width: 100%;
